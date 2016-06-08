@@ -1,0 +1,8 @@
+pipeline:
+  build:
+    image: debian:jessie
+    commands:
+      - echo hi
+  slack:
+    channel: dev
+    username: drone
