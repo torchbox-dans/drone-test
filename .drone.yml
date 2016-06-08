@@ -3,9 +3,12 @@ pipeline:
     image: debian:jessie
     commands:
       - echo hi
+  slack:
+    channel: st-johns
+    username: drone
 
 notify:
   slack:
     webhook_url: https://hooks.slack.com/services/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
-    channel: "#st-johns"
+    channel: st-johns
     username: drone
